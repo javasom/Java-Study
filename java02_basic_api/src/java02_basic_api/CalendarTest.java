@@ -9,11 +9,11 @@ public class CalendarTest {
 
 		 Calendar date = Calendar.getInstance();
 		//날짜 정보 변경
-		 date.set(2024, 2, 15); //년월일 변경하기 2024,03,15
+		// date.set(2024, 2, 15); //년월일 변경하기 2024,03,15
 		//월 변경	3월-> 7월로 
-		 date.set(Calendar.MONTH, 6);
+		// date.set(Calendar.MONTH, 6);
 		//년도를 2022년으로 변경
-		 date.set(Calendar.YEAR, 2022);
+		// date.set(Calendar.YEAR, 2022);
 		 
 		//System.out.println(date);
 				 

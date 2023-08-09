@@ -16,7 +16,7 @@ public class ArraysTest {
 		Arrays.sort(data);
 		System.out.println("정렬 후-> " +Arrays.toString(data));
 		
-		//벼엘의 일부값만 정렬하기
+		//배열의 일부값만 정렬하기
 		int data2[] = {52,86,95,75,41,15,93,46,25};
 		System.out.println("정렬 전-> " +Arrays.toString(data2));
 		
