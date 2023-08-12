@@ -49,8 +49,11 @@ public class ProductVO {
 	}
 	@Override
 	public String toString() {
-		return "ProductVO [prdNo=" + prdNo + ", prdName=" + prdName + ", prdPrice=" + prdPrice + ", prdYear=" + prdYear
-				+ ", prdMaker=" + prdMaker + "]";
+		
+		String format = "%03d\t%s\t%d\t%d\t%s";
+        String result = String.format(format, prdNo, prdName, prdPrice, prdYear, prdMaker);
+       
+        return result;
 	}
 
 	
