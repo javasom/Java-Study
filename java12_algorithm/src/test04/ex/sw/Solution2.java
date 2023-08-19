@@ -5,26 +5,24 @@ import java.util.Scanner;
 public class Solution2 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
+		//테스트 케이스를 입력받을 변수
+		int t =sc.nextInt();
 		
-		for(int i=1; i<=t; i++) {
-			int sum = 0;
-			for(int j=1; i<10; j++) {
-				int num = sc.nextInt();
-				if(num%2==1) {
-					sum+=sum;
-				}
+		for(int i=1; i<=t; i++) {		//테스트 케이스만큼 반복해서 입력을 받음
+			int sum = 0;				//숫자들의 합을 저장할 변수
+			for(int j=1; j<=10; j++) {	//하나의 케이스마다 10개씩 입력받게 함
+				int num = sc.nextInt(); //숫자들을 입력받고
+				if(num%2==1) {			//숫자들이 홀수인지 판별
+					sum+=num;			//홀수이면 sum에 num을 계속 저장함
+				}					
 			}
-			System.out.printf("#" +i+" ", +sum);
+			System.out.printf("#" +i+ " "+sum+"\n");
 		}
-		
 
 	}
 }
-
-
 
 /*
 10개의 수를 입력 받아, 그 중에서 홀수만 더한 값을 출력하는 프로그램을 작성하라.

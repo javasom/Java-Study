@@ -9,7 +9,7 @@ public class Solution1 {
 	public static void main(String[] args) {
 		try {
 			// 데이터 가져오기
-			System.setIn(new FileInputStream("src/test03/ex/sw/input.txt"));
+			System.setIn(new FileInputStream("src/test04/ex/sw/input.txt"));
 			
 			Scanner sc = new Scanner(System.in);
 			int cnt = sc.nextInt();//문제수
