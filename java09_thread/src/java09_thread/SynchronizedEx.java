@@ -6,7 +6,7 @@ public class SynchronizedEx implements Runnable{
 		
 	}
 	//메소드에 동기화 처리
-	public Synchronized void run() {
+	public void run1() {
 		//스레드 동기화 : 스레드를 사용 중일때 다른 스레드 대기를 하고 현재 스레드 실행이 끝나면 다음 스레드가 구현된다.
 		//Synchronized (this){
 		// 1번에 1000씩 7번 인출하기
@@ -45,6 +45,11 @@ public class SynchronizedEx implements Runnable{
 		mother.start();
 		son.start();
 
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

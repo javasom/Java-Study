@@ -26,7 +26,7 @@ public class ArrayInsertionSort {
 			int temp = arr[i];//비교 대상이 되는 데이터를 임시변수에 보관
 			//					   temp보다 비교 대상이 되는 값이 크면 다음 값을 확인해야 한다.
 			int j;
-			for(j=1-1; j>=0 && temp<arr[j]; j--) {	// i=3 -> j=2,1,0	i=5 -> j=4,3,2,1,0
+			for(j=i-1; j>=0 && temp<arr[j]; j--) {	// i=3 -> j=2,1,0	i=5 -> j=4,3,2,1,0
 				//값을 옮기기
 				arr[j+1]= arr[j];
 			}

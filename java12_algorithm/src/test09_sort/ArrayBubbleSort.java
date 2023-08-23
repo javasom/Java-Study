@@ -36,7 +36,10 @@ public class ArrayBubbleSort {
 			for(int i=arr.length-1; i>k; i--) {// 9,8,7,6,5,4,3,2,1
 				//		8		   9
 				if( arr[i-1] > arr[i]) {
-					swap(arr, i-1, i);
+					//swap(arr, i-1, i);
+					int temp = arr[i];
+					arr[i-1] = arr[i];
+					arr[i] = temp;
 				}
 			}
 		}
